@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -52,8 +53,10 @@ public class BaseTest {
 		  
 	    if(browser.equals("chrome")){
 		  
-		  
-			  driver = new ChromeDriver();
+	    	ChromeOptions options = new ChromeOptions();
+	    	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+	    	options.addArguments("--no-sandbox"); // Bypass OS security model
+			  driver = new ChromeDriver(options);
 			  driver.manage().deleteAllCookies();
 			  driver.manage().window().maximize();
 			  wait = new WebDriverWait(driver,Duration.ofSeconds(30));
