@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_3">
+        <methods>
+          <include name="setup"/>
+          <include name="takescreenshot"/>
+          <include name="lg" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_3 -->
+      <class name="HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2">
+        <methods>
+          <include name="setup"/>
+          <include name="takescreenshot"/>
+          <include name="lg" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2 -->
+      <class name="HomePage.HomePage_SwagLabs_menu_TestCase_1">
+        <methods>
+          <include name="lg" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="takescreenshot"/>
+        </methods>
+      </class> <!-- HomePage.HomePage_SwagLabs_menu_TestCase_1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

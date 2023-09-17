@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-17T15:53:51Z" name="HomePage_Suite" finished-at="2023-09-17T15:54:08Z" duration-ms="16121">
+    <groups>
+    </groups>
+    <test started-at="2023-09-17T15:53:51Z" name="HomePage_testcases" finished-at="2023-09-17T15:54:08Z" duration-ms="16121">
+      <class name="HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T15:53:51Z" name="setup" finished-at="2023-09-17T15:54:01Z" duration-ms="9731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T15:54:01Z" name="lg" data-provider="getdata" finished-at="2023-09-17T15:54:05Z" duration-ms="3407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lg -->
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T15:54:05Z" name="takescreenshot" finished-at="2023-09-17T15:54:05Z" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=lg status=SUCCESS method=HomePage_SwagLabs_VerifyAddToCart_TestCase_4.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshot -->
+      </class> <!-- HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4 -->
+      <class name="HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T15:53:51Z" name="setup" finished-at="2023-09-17T15:54:02Z" duration-ms="10420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T15:54:02Z" name="lg" data-provider="getdata" finished-at="2023-09-17T15:54:07Z" duration-ms="5493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lg -->
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T15:54:07Z" name="takescreenshot" finished-at="2023-09-17T15:54:08Z" duration-ms="169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=lg status=SUCCESS method=HomePage_SwagLabs_SauceProducts_TestCase_2.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshot -->
+      </class> <!-- HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2 -->
+      <class name="HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T15:53:51Z" name="setup" finished-at="2023-09-17T15:54:02Z" duration-ms="10746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T15:54:02Z" name="lg" data-provider="getdata" finished-at="2023-09-17T15:54:04Z" duration-ms="2060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lg -->
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T15:54:04Z" name="takescreenshot" finished-at="2023-09-17T15:54:04Z" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=lg status=SUCCESS method=HomePage_SwagLabs_SortingMenu_TestCase_3.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshot -->
+      </class> <!-- HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3 -->
+      <class name="HomePage.HomePage_SwagLabs_menu_TestCase_1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T15:53:51Z" name="setup" finished-at="2023-09-17T15:54:02Z" duration-ms="10857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T15:54:02Z" name="lg" data-provider="getdata" finished-at="2023-09-17T15:54:05Z" duration-ms="2658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lg -->
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T15:54:05Z" name="takescreenshot" finished-at="2023-09-17T15:54:05Z" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=lg status=SUCCESS method=HomePage_SwagLabs_menu_TestCase_1.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshot -->
+      </class> <!-- HomePage.HomePage_SwagLabs_menu_TestCase_1 -->
+    </test> <!-- HomePage_testcases -->
+  </suite> <!-- HomePage_Suite -->
+</testng-results>
