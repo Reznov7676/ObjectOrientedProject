@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-17T19:24:44Z" name="HomePage_Suite" finished-at="2023-09-17T19:25:01Z" duration-ms="17132">
+  <suite started-at="2023-09-17T20:11:55Z" name="HomePage_Suite" finished-at="2023-09-17T20:12:10Z" duration-ms="15061">
     <groups>
     </groups>
-    <test started-at="2023-09-17T19:24:44Z" name="HomePage_testcases" finished-at="2023-09-17T19:25:01Z" duration-ms="17132">
+    <test started-at="2023-09-17T20:11:55Z" name="HomePage_testcases" finished-at="2023-09-17T20:12:10Z" duration-ms="15061">
       <class name="HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T19:24:44Z" name="setup" finished-at="2023-09-17T19:24:55Z" duration-ms="11728" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T20:12:00Z" name="setup" finished-at="2023-09-17T20:12:02Z" duration-ms="1531" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[safari]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T19:24:55Z" name="lg" data-provider="getdata" finished-at="2023-09-17T19:24:58Z" duration-ms="2437" status="PASS">
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T20:12:02Z" name="lg" data-provider="getdata" finished-at="2023-09-17T20:12:02Z" duration-ms="360" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,14 +31,47 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Pages.HomePageObjectsAndpageActions.ClickOnSauceProducts(HomePageObjectsAndpageActions.java:96)
+at HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4.lg(HomePage_SwagLabs_VerifyAddToCart_TestCase_4.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lg -->
-        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T19:24:58Z" name="takescreenshot" finished-at="2023-09-17T19:24:58Z" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5]" started-at="2023-09-17T20:12:02Z" name="takescreenshot" finished-at="2023-09-17T20:12:02Z" duration-ms="316" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=lg status=SUCCESS method=HomePage_SwagLabs_VerifyAddToCart_TestCase_4.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5] output={null}]]]>
+                <![CDATA[[TestResult name=lg status=FAILURE method=HomePage_SwagLabs_VerifyAddToCart_TestCase_4.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4@484094a5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -46,59 +79,19 @@
           </reporter-output>
         </test-method> <!-- takescreenshot -->
       </class> <!-- HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4 -->
-      <class name="HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T19:24:44Z" name="setup" finished-at="2023-09-17T19:24:55Z" duration-ms="11728" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T19:24:55Z" name="lg" data-provider="getdata" finished-at="2023-09-17T19:25:01Z" duration-ms="5212" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lg -->
-        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T19:25:01Z" name="takescreenshot" finished-at="2023-09-17T19:25:01Z" duration-ms="143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=lg status=SUCCESS method=HomePage_SwagLabs_SauceProducts_TestCase_2.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takescreenshot -->
-      </class> <!-- HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2 -->
       <class name="HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T19:24:44Z" name="setup" finished-at="2023-09-17T19:24:55Z" duration-ms="11728" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T20:12:02Z" name="setup" finished-at="2023-09-17T20:12:04Z" duration-ms="1383" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[safari]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T19:24:55Z" name="lg" data-provider="getdata" finished-at="2023-09-17T19:24:57Z" duration-ms="1853" status="PASS">
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T20:12:04Z" name="lg" data-provider="getdata" finished-at="2023-09-17T20:12:04Z" duration-ms="420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +107,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lg -->
-        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T19:24:57Z" name="takescreenshot" finished-at="2023-09-17T19:24:58Z" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3@38234a38]" started-at="2023-09-17T20:12:04Z" name="takescreenshot" finished-at="2023-09-17T20:12:04Z" duration-ms="100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,19 +119,19 @@
           </reporter-output>
         </test-method> <!-- takescreenshot -->
       </class> <!-- HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3 -->
-      <class name="HomePage.HomePage_SwagLabs_menu_TestCase_1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T19:24:44Z" name="setup" finished-at="2023-09-17T19:24:55Z" duration-ms="11728" status="PASS">
+      <class name="HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T20:12:04Z" name="setup" finished-at="2023-09-17T20:12:06Z" duration-ms="1283" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[safari]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T19:24:55Z" name="lg" data-provider="getdata" finished-at="2023-09-17T19:24:58Z" duration-ms="2332" status="PASS">
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T20:12:06Z" name="lg" data-provider="getdata" finished-at="2023-09-17T20:12:09Z" duration-ms="3492" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -151,14 +144,120 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Pages.HomePageObjectsAndpageActions.ClickOnSauceProducts(HomePageObjectsAndpageActions.java:96)
+at HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2.lg(HomePage_SwagLabs_SauceProducts_TestCase_2.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lg -->
-        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T19:24:58Z" name="takescreenshot" finished-at="2023-09-17T19:24:58Z" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb]" started-at="2023-09-17T20:12:09Z" name="takescreenshot" finished-at="2023-09-17T20:12:10Z" duration-ms="447" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=lg status=SUCCESS method=HomePage_SwagLabs_menu_TestCase_1.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6] output={null}]]]>
+                <![CDATA[[TestResult name=lg status=FAILURE method=HomePage_SwagLabs_SauceProducts_TestCase_2.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2@63fbfaeb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshot -->
+      </class> <!-- HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2 -->
+      <class name="HomePage.HomePage_SwagLabs_menu_TestCase_1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T20:11:55Z" name="setup" finished-at="2023-09-17T20:11:59Z" duration-ms="4528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T20:11:59Z" name="lg" data-provider="getdata" finished-at="2023-09-17T20:12:00Z" duration-ms="579" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Pages.HomePageObjectsAndpageActions.ClickOnSauceProducts(HomePageObjectsAndpageActions.java:96)
+at HomePage.HomePage_SwagLabs_menu_TestCase_1.lg(HomePage_SwagLabs_menu_TestCase_1.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lg -->
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6]" started-at="2023-09-17T20:12:00Z" name="takescreenshot" finished-at="2023-09-17T20:12:00Z" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=lg status=FAILURE method=HomePage_SwagLabs_menu_TestCase_1.lg(java.lang.String, java.lang.String)[pri:0, instance:HomePage.HomePage_SwagLabs_menu_TestCase_1@4f5991f6] output={null}]]]>
               </value>
             </param>
           </params>

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [HomePage_Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="HomePage_testcases(failed)">
+  <test thread-count="5" name="HomePage_testcases(failed)">
     <parameter name="browser" value="safari"/>
     <classes>
-      <class name="HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3">
-        <methods>
-          <include name="setup"/>
-          <include name="lg"/>
-          <include name="takescreenshot"/>
-        </methods>
-      </class> <!-- HomePage.HomePage_SwagLabs_SortingMenu_TestCase_3 -->
       <class name="HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4">
         <methods>
           <include name="setup"/>
-          <include name="lg"/>
+          <include name="lg" invocation-numbers="0"/>
           <include name="takescreenshot"/>
         </methods>
       </class> <!-- HomePage.HomePage_SwagLabs_VerifyAddToCart_TestCase_4 -->
       <class name="HomePage.HomePage_SwagLabs_menu_TestCase_1">
         <methods>
-          <include name="lg"/>
+          <include name="lg" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="takescreenshot"/>
         </methods>
@@ -29,7 +22,7 @@
         <methods>
           <include name="setup"/>
           <include name="takescreenshot"/>
-          <include name="lg"/>
+          <include name="lg" invocation-numbers="0"/>
         </methods>
       </class> <!-- HomePage.HomePage_SwagLabs_SauceProducts_TestCase_2 -->
     </classes>
