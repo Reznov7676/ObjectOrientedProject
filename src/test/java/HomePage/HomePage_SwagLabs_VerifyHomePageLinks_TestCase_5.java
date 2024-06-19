@@ -15,7 +15,7 @@ import Pages.HomePageObjectsAndpageActions;
 import Pages.LoginPage;
 import Tests.BaseTest;
 
-public class HomePage_SwagLabs_menu_TestCase_1 extends BaseTest {
+public class HomePage_SwagLabs_VerifyHomePageLinks_TestCase_5 extends BaseTest {
 
 	
 	@Test(dataProvider="getdata")
@@ -23,9 +23,7 @@ public class HomePage_SwagLabs_menu_TestCase_1 extends BaseTest {
 	public void lg(String User , String pas) throws FileNotFoundException, IOException, ParseException, InterruptedException {
 		
 		page.getInstance(LoginPage.class).Loginhomepage(User, pas);
-		String test= verifyTitle();
-		Assert.assertEquals(test, "Swag Labs");
-		page.getInstance(HomePageObjectsAndpageActions.class).ClickOnSauceProducts();
+		ToverifyBrokenLinks();
 		
 	}
 	
