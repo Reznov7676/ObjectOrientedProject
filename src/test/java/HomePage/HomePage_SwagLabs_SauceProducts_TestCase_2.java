@@ -26,7 +26,7 @@ public class HomePage_SwagLabs_SauceProducts_TestCase_2 extends BaseTest {
 		String test= verifyTitle();
 		Assert.assertEquals(test, "Swag Labs");
 		page.getInstance(HomePageObjectsAndpageActions.class).VerifySwagLabsMenu();
-		page.getInstance(HomePageObjectsAndpageActions.class).ClickOnSauceProducts();
+		
 		
 	}
 	

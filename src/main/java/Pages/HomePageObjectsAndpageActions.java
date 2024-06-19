@@ -1,6 +1,7 @@
 package Pages;
 
 import java.io.FileNotFoundException;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,20 +16,29 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.google.gson.JsonParser;
+
 
 
 public class HomePageObjectsAndpageActions extends BasePage{
+	
 
+	By InventoryItemsList = By.xpath("//div[@class='inventory_item_name']");
+	By AddToCartButton = By.cssSelector(".btn");
+	By Menubutton = By.xpath("//*[@id='react-burger-menu-btn']");
+	By MenuItemList = By.xpath("//*[@id='menu_button_container']/div/div[2]/div[1]/nav/a");
+	
 	public HomePageObjectsAndpageActions(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 		
 	}
 	
 	public void clickOnaddTocart() {
+
 		String b [] = {"Sauce Labs Backpack","Sauce Labs Bike Light","Sauce Labs Fleece Jacket"};
 		//String b  = "Sauce Labs Bike Light";
 		//String a =driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div")).getText();
-		List<WebElement> gt =driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
+		List<WebElement> gt =driver.findElements(InventoryItemsList);
 		for(int i=0;i<=gt.size()-1;i++) {
 			
 			
@@ -40,7 +50,7 @@ public class HomePageObjectsAndpageActions extends BasePage{
 			
 		if (names.contains(p)) {
 		
-			    driver.findElements(By.cssSelector(".btn")).get(i).click();
+			    driver.findElements(AddToCartButton).get(i).click();
 				
        }
 			
@@ -60,9 +70,9 @@ public class HomePageObjectsAndpageActions extends BasePage{
 		ArrayList <String>ft = new ArrayList<String>(Arrays.asList(arr));
 		ArrayList <String>op = new ArrayList<String>();
 		
-		driver.findElement(By.xpath("//*[@id='react-burger-menu-btn']")).click();
+		driver.findElement(Menubutton).click();
 		Thread.sleep(3000);
-		List <WebElement> list = driver.findElements(By.xpath("//*[@id='menu_button_container']/div/div[2]/div[1]/nav/a"));
+		List <WebElement> list = driver.findElements(MenuItemList);
 		for(WebElement df: list) {
 			String vc=df.getText();
 			System.out.println(vc);
@@ -85,15 +95,19 @@ public class HomePageObjectsAndpageActions extends BasePage{
 	
 	public void ClickOnSauceProducts() {
 		
-		List <WebElement> SauceList=driver.findElements(By.xpath("//div[@class='inventory_container'] //div[@class='inventory_item_name']"));
-	
+		List <WebElement> SauceList= driver.findElements(By.xpath("//div[@class='inventory_item_label']/a/div"));
+				
+	int grt=	SauceList.size();
+	System.out.println(grt);
 		for(WebElement d: SauceList) {
 			
 	String product=	d.getText();
 	
 	if(product.contains("Sauce")) {
-		WebElement addtocart=	driver.findElement(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']"));
-	wait.until(ExpectedConditions.visibilityOf(addtocart)).click();
+		WebElement addtocart=	driver.findElement(By.xpath("//button[text()='Add to cart']"));
+	//wait.until(ExpectedConditions.visibilityOf(addtocart)).click(); 
+	//wait.until(ExpectedConditions.elementToBeClickable(addtocart)).click();
+		addtocart.click();
 	
 		
 	}
@@ -151,6 +165,8 @@ public class HomePageObjectsAndpageActions extends BasePage{
 		}
 	}
 	
+	
+
 	
 
 }

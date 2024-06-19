@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="HomePage_Suite">
-  <test thread-count="5" name="HomePage_testcases" parallel="methods">
+  <test thread-count="5" name="HomePage_testcases" >
   
     <parameter name="browser" value="chrome" />
-    
-    <packages>
-            <package name="HomePage"/>
+     
+<packages>
+            <package name="HomePage" />
+            
+           
         </packages>
+      
+        
+<!--         <classes>
+        
+        <class name = "HomePage.HomePage_SwagLabs_VerifyHomePageLinks_TestCase_5"/>
+        </classes> -->
+
 
   </test> <!-- Test -->
 </suite> <!-- Suite -->

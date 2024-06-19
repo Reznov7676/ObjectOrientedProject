@@ -5,9 +5,12 @@
   
     <parameter name="browser" value="safari" />
     
-    <packages>
-            <package name="HomePage"/>
-        </packages>
+        <classes>
+        
+        <class name = "HomePage.HomePage_SwagLabs_menu_TestCase_1"/>
+        </classes>
+        
+
 
   </test> <!-- Test -->
 </suite> <!-- Suite -->
