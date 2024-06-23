@@ -1,0 +1,9 @@
+{
+
+  "Portal_url" : "https://www.saucedemo.com/"
+  "username" : "//*[@id=\"user-name\"]"
+  "password" : "//*[@id=\"password\"]"
+  "Login_btn" : "//*[@id=\"login-button\"]"
+  "ClickonAddtoCart_btn" : ".btn"
+}
+

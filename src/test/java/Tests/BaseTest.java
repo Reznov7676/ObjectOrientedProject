@@ -55,7 +55,7 @@ public class BaseTest {
 	public void setup(String browser) throws FileNotFoundException, IOException, ParseException {
 		
 		JSONParser jsonparser = new JSONParser();
-		JSONObject rejsonobject=(JSONObject) jsonparser.parse(new FileReader("/Users/jaymaldikar/eclipse-workspace/PageObjectModel_currentlyworking/json/locators.json"));
+		JSONObject rejsonobject=(JSONObject) jsonparser.parse(new FileReader("/Users/jaymaldikar/eclipse-workspace/ObjectOrientedProject/json/locators.json"));
 		
 		
 //		driver = new ChromeDriver();
