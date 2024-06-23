@@ -20,6 +20,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Clear actions cache
+      run: |
+        rm -rf ~/.npm
+        rm -rf ~/.cache
+    
     - name: Checkout code
       uses: actions/checkout@v3
 
