@@ -71,11 +71,12 @@ public class BaseTest {
 		  
 	    if(browser.equals("chrome")){
 		  
-//	    	ChromeOptions options = new ChromeOptions();
-//	    	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-//	    	options.addArguments("--no-sandbox"); // Bypass OS security model
-//	    	options.addArguments("--headless");
-			  driver = new ChromeDriver();
+	    	ChromeOptions options = new ChromeOptions();
+	    	options.addArguments("--disable-gpu");
+	    	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+	    	options.addArguments("--no-sandbox"); // Bypass OS security model
+	    	//options.addArguments("--headless");
+			  driver = new ChromeDriver(options);
 			  driver.manage().deleteAllCookies();
 			  driver.manage().window().maximize();
 			//  wait = new WebDriverWait(driver,Duration.ofSeconds(30));
