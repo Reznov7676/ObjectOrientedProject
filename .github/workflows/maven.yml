@@ -40,6 +40,18 @@ jobs:
         distribution: 'temurin'
         java-version: '11'
 
+    - name: Verify Node.js installation
+      run: node --version
+
+    - name: Verify npm installation
+      run: npm --version
+
+    - name: List project root directory contents
+      run: ls -la
+
+    - name: List JSON directory contents
+      run: ls -la json
+
     - name: Build with Maven
       run: mvn clean install
 
