@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.Calendar;
 import java.util.Date;
@@ -55,8 +56,9 @@ public class BaseTest {
 	public void setup(String browser) throws FileNotFoundException, IOException, ParseException {
 		
 		JSONParser jsonparser = new JSONParser();
-		JSONObject rejsonobject=(JSONObject) jsonparser.parse(new FileReader("/Users/jaymaldikar/eclipse-workspace/ObjectOrientedProject/json/locators.json"));
-		
+		String locatorsPath = Paths.get("json", "locators.json").toString();
+		//JSONObject rejsonobject=(JSONObject) jsonparser.parse(new FileReader("/Users/jaymaldikar/eclipse-workspace/ObjectOrientedProject/json/locators.json"));
+		JSONObject rejsonobject=(JSONObject) jsonparser.parse(new FileReader(locatorsPath));
 		
 //		driver = new ChromeDriver();
 //		  
