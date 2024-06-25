@@ -40,25 +40,16 @@ jobs:
 
       - name: Install ChromeDriver
         run: |
-          set -x # Enable command echoing for debugging
-          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
-          echo "Detected Chrome version: $CHROME_VERSION"
-          MAJOR_CHROME_VERSION=$(echo $CHROME_VERSION | cut -d '.' -f 1)
-          echo "Major Chrome version: $MAJOR_CHROME_VERSION"
-          LATEST_DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$MAJOR_CHROME_VERSION" || echo "")
-          if [ -z "$LATEST_DRIVER_VERSION" ]; then
-            echo "Failed to get the latest ChromeDriver version for Chrome $MAJOR_CHROME_VERSION. Falling back to LATEST_RELEASE."
+            set -x # Enable command echoing for debugging
+            CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+            echo "Detected Chrome version: $CHROME_VERSION"
             LATEST_DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
-          fi
-          if [ -z "$LATEST_DRIVER_VERSION" ]; then
-            echo "Failed to get any valid ChromeDriver version. Exiting."
-            exit 1
-          fi
-          echo "Using ChromeDriver version: $LATEST_DRIVER_VERSION"
-          wget -O /tmp/chromedriver.zip "https://chromedriver.storage.googleapis.com/$LATEST_DRIVER_VERSION/chromedriver_linux64.zip"
-          sudo unzip /tmp/chromedriver.zip -d /usr/local/bin/
-          sudo chmod +x /usr/local/bin/chromedriver
-          chromedriver --version
+            echo "Latest ChromeDriver version: $LATEST_DRIVER_VERSION"
+            wget -O /tmp/chromedriver.zip "https://chromedriver.storage.googleapis.com/$LATEST_DRIVER_VERSION/chromedriver_linux64.zip"
+            sudo unzip /tmp/chromedriver.zip -d /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+            chromedriver --version
+
 
       - name: Verify Node.js installation
         run: node --version
