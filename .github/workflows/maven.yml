@@ -11,69 +11,69 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Set up Node.js 20
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-    - name: Clear actions cache
-      run: |
-        rm -rf ~/.npm
-        rm -rf ~/.cache
+      - name: Clear actions cache
+        run: |
+          rm -rf ~/.npm
+          rm -rf ~/.cache
 
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up JDK 11
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '11'
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
 
-    - name: Install Chrome
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y wget unzip
-        wget -O /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb || sudo apt-get install -f -y
-        google-chrome --version
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget -O /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb || sudo apt-get install -f -y
+          google-chrome --version
 
-    - name: Install ChromeDriver
-      run: |
-        set -x # Enable command echoing for debugging
-        CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
-        echo "Detected Chrome version: $CHROME_VERSION"
-        MAJOR_CHROME_VERSION=$(echo $CHROME_VERSION | cut -d '.' -f 1)
-        echo "Major Chrome version: $MAJOR_CHROME_VERSION"
-        LATEST_DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$MAJOR_CHROME_VERSION" || echo "")
-        if [ -z "$LATEST_DRIVER_VERSION" ]; then
-          echo "Failed to get the latest ChromeDriver version for Chrome $MAJOR_CHROME_VERSION. Falling back to LATEST_RELEASE."
-          LATEST_DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
-        fi
-        if [ -z "$LATEST_DRIVER_VERSION" ]; then
-          echo "Failed to get any valid ChromeDriver version. Exiting."
-          exit 1
-        fi
-        echo "Using ChromeDriver version: $LATEST_DRIVER_VERSION"
-        wget -O /tmp/chromedriver.zip "https://chromedriver.storage.googleapis.com/$LATEST_DRIVER_VERSION/chromedriver_linux64.zip"
-        sudo unzip /tmp/chromedriver.zip -d /usr/local/bin/
-        sudo chmod +x /usr/local/bin/chromedriver
-        chromedriver --version
+      - name: Install ChromeDriver
+        run: |
+          set -x # Enable command echoing for debugging
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+          echo "Detected Chrome version: $CHROME_VERSION"
+          MAJOR_CHROME_VERSION=$(echo $CHROME_VERSION | cut -d '.' -f 1)
+          echo "Major Chrome version: $MAJOR_CHROME_VERSION"
+          LATEST_DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$MAJOR_CHROME_VERSION" || echo "")
+          if [ -z "$LATEST_DRIVER_VERSION" ]; then
+            echo "Failed to get the latest ChromeDriver version for Chrome $MAJOR_CHROME_VERSION. Falling back to LATEST_RELEASE."
+            LATEST_DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
+          fi
+          if [ -z "$LATEST_DRIVER_VERSION" ]; then
+            echo "Failed to get any valid ChromeDriver version. Exiting."
+            exit 1
+          fi
+          echo "Using ChromeDriver version: $LATEST_DRIVER_VERSION"
+          wget -O /tmp/chromedriver.zip "https://chromedriver.storage.googleapis.com/$LATEST_DRIVER_VERSION/chromedriver_linux64.zip"
+          sudo unzip /tmp/chromedriver.zip -d /usr/local/bin/
+          sudo chmod +x /usr/local/bin/chromedriver
+          chromedriver --version
 
-    - name: Verify Node.js installation
-      run: node --version
+      - name: Verify Node.js installation
+        run: node --version
 
-    - name: Verify npm installation
-      run: npm --version
+      - name: Verify npm installation
+        run: npm --version
 
-    - name: List project root directory contents
-      run: ls -la
+      - name: List project root directory contents
+        run: ls -la
 
-    - name: List JSON directory contents
-      run: ls -la json
+      - name: List JSON directory contents
+        run: ls -la json
 
-    - name: Build with Maven
-      run: mvn clean install
+      - name: Build with Maven
+        run: mvn clean install
 
-    - name: Run tests
-      run: mvn test
+      - name: Run tests
+        run: mvn test
