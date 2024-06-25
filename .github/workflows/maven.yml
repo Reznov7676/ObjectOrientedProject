@@ -45,10 +45,10 @@ jobs:
             echo "Detected Chrome version: $CHROME_VERSION"
             LATEST_DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
             echo "Latest ChromeDriver version: $LATEST_DRIVER_VERSION"
-            wget -O /tmp/chromedriver.zip "https://chromedriver.storage.googleapis.com/$LATEST_DRIVER_VERSION/chromedriver_linux64.zip"
-            sudo unzip /tmp/chromedriver.zip -d /usr/local/bin/
-            sudo chmod +x /usr/local/bin/chromedriver
-            chromedriver --version
+            apt-get update
+            wget http://dl.google.com/linux/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_114.0.5735.6-1_amd64.deb
+            sudo apt-get install -f ./google-chrome-unstable_114.0.5735.6-1_amd64.deb
+            sudo ln -s /opt/google/chrome-unstable/google-chrome google-chrome-stable
 
 
       - name: Verify Node.js installation
