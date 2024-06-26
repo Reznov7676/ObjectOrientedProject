@@ -24,7 +24,7 @@ public class HomePage_SwagLabs_VerifyHomePageLinks_TestCase_5 extends BaseTest {
 		
 		page.getInstance(LoginPage.class).Loginhomepage(User, pas);
 		ToverifyBrokenLinks();
-		
+		.
 	}
 	
 
